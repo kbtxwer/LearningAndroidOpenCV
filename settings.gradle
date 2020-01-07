@@ -1,0 +1,2 @@
+include ':app', ':sdk420'
+rootProject.name='LearningAndroidOpenCV'
