@@ -24,6 +24,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.ReadAndWriteActivity" />
+        <activity android:name=".ui.MatOperationActivity" />
     </application>
 
 </manifest>
