@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ListView
 import android.widget.SimpleAdapter
+import cn.onlyloveyd.demo.ui.MatOperationActivity
 import cn.onlyloveyd.demo.ui.ReadAndWriteActivity
 
 class MainActivity : ListActivity() {
@@ -27,6 +28,12 @@ class MainActivity : ListActivity() {
             mapOf(
                 "title" to "读取和保存图像",
                 "intent" to activityToIntent(ReadAndWriteActivity::class.java.name)
+            )
+        )
+        myData.add(
+            mapOf(
+                "title" to "Mat操作",
+                "intent" to activityToIntent(MatOperationActivity::class.java.name)
             )
         )
         return myData
