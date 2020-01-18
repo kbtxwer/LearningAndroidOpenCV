@@ -138,4 +138,10 @@ class MatOperationActivity : AppCompatActivity() {
         showResult(dst)
         dst.release()
     }
+
+    override fun onDestroy() {
+        source.release()
+        bgr.release()
+        super.onDestroy()
+    }
 }
