@@ -39,7 +39,7 @@ class MainActivity : ListActivity() {
         )
         myData.add(
             mapOf(
-                "title" to "图像像素统计",
+                "title" to "图像像素值统计",
                 "intent" to activityToIntent(PixelStatisticsActivity::class.java.name)
             )
         )
