@@ -23,8 +23,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.ReadAndWriteActivity" />
-        <activity android:name=".ui.MatOperationActivity" />
+
+        <activity
+            android:name=".ui.ReadAndWriteActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.MatOperationActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.PixelStatisticsActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
     </application>
 
 </manifest>

@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.ListView
 import android.widget.SimpleAdapter
 import cn.onlyloveyd.demo.ui.MatOperationActivity
+import cn.onlyloveyd.demo.ui.PixelStatisticsActivity
 import cn.onlyloveyd.demo.ui.ReadAndWriteActivity
 
 class MainActivity : ListActivity() {
@@ -34,6 +35,12 @@ class MainActivity : ListActivity() {
             mapOf(
                 "title" to "Mat操作",
                 "intent" to activityToIntent(MatOperationActivity::class.java.name)
+            )
+        )
+        myData.add(
+            mapOf(
+                "title" to "图像像素统计",
+                "intent" to activityToIntent(PixelStatisticsActivity::class.java.name)
             )
         )
         return myData
