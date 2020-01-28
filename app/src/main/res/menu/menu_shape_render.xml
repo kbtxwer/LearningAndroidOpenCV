@@ -7,6 +7,9 @@
         android:id="@+id/rectangle"
         android:title="矩形" />
     <item
+        android:id="@+id/poly"
+        android:title="多边形" />
+    <item
         android:id="@+id/circle"
         android:title="圆形" />
     <item
@@ -15,4 +18,8 @@
     <item
         android:id="@+id/text"
         android:title="文字" />
+
+    <item
+        android:id="@+id/chinese_text"
+        android:title="中文文字" />
 </menu>

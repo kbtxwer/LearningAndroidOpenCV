@@ -3,6 +3,9 @@ package cn.onlyloveyd.demo.ui
 import android.content.Context
 import android.content.Intent
 import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Color
+import android.graphics.Paint
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -11,11 +14,9 @@ import androidx.databinding.DataBindingUtil
 import cn.onlyloveyd.demo.R
 import cn.onlyloveyd.demo.databinding.ActivityShapeRenderBinding
 import org.opencv.android.Utils
-import org.opencv.core.Mat
-import org.opencv.core.Point
-import org.opencv.core.Scalar
-import org.opencv.core.Size
+import org.opencv.core.*
 import org.opencv.imgproc.Imgproc
+
 
 /**
  * 绘制几何图形
@@ -26,6 +27,7 @@ class ShapeRenderActivity : AppCompatActivity() {
 
     private lateinit var mBinding: ActivityShapeRenderBinding
     private lateinit var mSourceMat: Mat
+    private val mFillColor = Scalar(0.0, 0.0, 255.0)
 
     companion object {
         fun launch(context: Context) {
@@ -59,9 +61,11 @@ class ShapeRenderActivity : AppCompatActivity() {
         when (item.itemId) {
             R.id.line -> renderLine(mSourceMat.clone())
             R.id.rectangle -> renderRectangle(mSourceMat.clone())
+            R.id.poly -> renderPoly(mSourceMat.clone())
             R.id.circle -> renderCircle(mSourceMat.clone())
             R.id.ellipse -> renderEllipse(mSourceMat.clone())
             R.id.text -> renderText(mSourceMat.clone())
+            R.id.chinese_text -> renderChineseText(mSourceMat.clone())
         }
         return true
     }
@@ -69,21 +73,41 @@ class ShapeRenderActivity : AppCompatActivity() {
     private fun renderLine(source: Mat) {
         val start = Point(0.0, source.height().toDouble())
         val end = Point(source.width().toDouble(), 0.0)
-        Imgproc.line(source, start, end, Scalar(255.0, 0.0, 0.0), 4)
+        Imgproc.line(source, start, end, mFillColor, 10, Imgproc.FILLED, 0)
         showMat(source)
     }
 
     private fun renderRectangle(source: Mat) {
         val leftTop = Point(10.0, 10.0)
-        val rightBottom = Point(60.0, 60.0)
-        Imgproc.rectangle(source, leftTop, rightBottom, Scalar(255.0, 0.0, 0.0), -1)
+        val rightBottom = Point(120.0, 120.0)
+        Imgproc.rectangle(source, leftTop, rightBottom, mFillColor, -1)
+        showMat(source)
+    }
+
+    private fun renderPoly(source: Mat) {
+        Imgproc.polylines(
+            source,
+            listOf(
+                MatOfPoint(
+                    Point(10.0, 10.0),
+                    Point(200.0, 20.0),
+                    Point(10.0, 240.0),
+                    Point(80.0, 120.0)
+                )
+            ),
+            true,
+            mFillColor,
+            4,
+            Imgproc.LINE_AA,
+            0
+        )
         showMat(source)
     }
 
     private fun renderCircle(source: Mat) {
         val center = Point(source.width() / 2.0, source.height() / 2.0)
-        val radius = 60
-        Imgproc.circle(source, center, radius, Scalar(255.0, 0.0, 0.0), 2, Imgproc.LINE_AA)
+        val radius = 120
+        Imgproc.circle(source, center, radius, mFillColor, -1, Imgproc.LINE_AA)
         showMat(source)
     }
 
@@ -94,17 +118,38 @@ class ShapeRenderActivity : AppCompatActivity() {
             "Hello",
             center,
             Imgproc.FONT_HERSHEY_TRIPLEX,
-            1.2,
-            Scalar(255.0, 0.0, 0.0),
-            2
+            2.8,
+            mFillColor,
+            10
         )
         // 中文乱码
         showMat(source)
     }
 
+    private fun renderChineseText(source: Mat) {
+        val icon = Bitmap.createBitmap(source.width(), source.height(), Bitmap.Config.ARGB_8888)
+        Utils.matToBitmap(source, icon)
+        source.release()
+        val bitmap: Bitmap =
+            icon.copy(Bitmap.Config.ARGB_8888, true)
+        val canvas = Canvas(bitmap)
+        val paint = Paint()
+        paint.isAntiAlias = true
+        paint.isDither = true
+        paint.textSize = 100F
+        paint.color = Color.BLUE
+        canvas.drawText(
+            "我是文字",
+            (bitmap.width / 5).toFloat(),
+            (bitmap.height / 2).toFloat(),
+            paint
+        )
+        mBinding.ivSource.setImageBitmap(bitmap)
+    }
+
     private fun renderEllipse(source: Mat) {
-        val size = Size(100.0, 50.0)
-        val center = Point(source.width() - 100.0, source.height() - 50.0)
+        val size = Size(100.0, 80.0)
+        val center = Point(source.width() - 200.0, source.height() - 160.0)
         Imgproc.ellipse(
             source,
             center,
@@ -112,9 +157,9 @@ class ShapeRenderActivity : AppCompatActivity() {
             360.0,
             0.0,
             360.0,
-            Scalar(255.0, 0.0, 0.0),
-            2,
-            Imgproc.LINE_8,
+            mFillColor,
+            -1,
+            Imgproc.LINE_AA,
             0
         )
         showMat(source)
