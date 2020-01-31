@@ -7,10 +7,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ListView
 import android.widget.SimpleAdapter
-import cn.onlyloveyd.demo.ui.MatOperationActivity
-import cn.onlyloveyd.demo.ui.PixelStatisticsActivity
-import cn.onlyloveyd.demo.ui.ReadAndWriteActivity
-import cn.onlyloveyd.demo.ui.ShapeRenderActivity
+import cn.onlyloveyd.demo.ui.*
 
 class MainActivity : ListActivity() {
 
@@ -48,6 +45,13 @@ class MainActivity : ListActivity() {
             mapOf(
                 "title" to "绘制几何图形",
                 "intent" to activityToIntent(ShapeRenderActivity::class.java.name)
+            )
+        )
+
+        myData.add(
+            mapOf(
+                "title" to "调整对比度和亮度",
+                "intent" to activityToIntent(ContrastBrightnessActivity::class.java.name)
             )
         )
         return myData
