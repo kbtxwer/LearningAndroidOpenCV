@@ -54,6 +54,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(ContrastBrightnessActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "颜色模型装换",
+                "intent" to activityToIntent(ColorTransferActivity::class.java.name)
+            )
+        )
         return myData
     }
 
