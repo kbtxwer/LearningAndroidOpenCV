@@ -12,6 +12,11 @@ import org.opencv.android.Utils
 import org.opencv.core.Mat
 import org.opencv.imgproc.Imgproc
 
+/**
+ * 颜色模型及转换
+ * author: yidong
+ * 2020/2/8
+ */
 class ColorTransferActivity : AppCompatActivity() {
 
     private lateinit var mBinding: ActivityColorTransferBinding
@@ -30,6 +35,7 @@ class ColorTransferActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        title = item.title
         when (item.itemId) {
             R.id.bgr -> showBgr()
             R.id.rgb -> showRgb()

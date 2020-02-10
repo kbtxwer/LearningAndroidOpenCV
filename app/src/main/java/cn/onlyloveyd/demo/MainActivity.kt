@@ -60,6 +60,13 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(ColorTransferActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "通道分离合并",
+                "intent" to activityToIntent(ChannelSplitMergeActivity::class.java.name)
+            )
+        )
         return myData
     }
 
