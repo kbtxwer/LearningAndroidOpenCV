@@ -67,6 +67,13 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(ChannelSplitMergeActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "图像二值化",
+                "intent" to activityToIntent(ImageBinaryzationActivity::class.java.name)
+            )
+        )
         return myData
     }
 
