@@ -74,6 +74,13 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(ImageBinaryzationActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "LUT查找表",
+                "intent" to activityToIntent(LutActivity::class.java.name)
+            )
+        )
         return myData
     }
 
