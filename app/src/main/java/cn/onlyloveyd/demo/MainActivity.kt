@@ -88,6 +88,13 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(PerspectiveTransformationActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "仿射变换",
+                "intent" to activityToIntent(AffineActivity::class.java.name)
+            )
+        )
         return myData
     }
 
