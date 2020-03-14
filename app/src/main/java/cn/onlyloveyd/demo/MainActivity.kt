@@ -101,6 +101,13 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(PolarActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "图像金字塔",
+                "intent" to activityToIntent(GLPyramidActivity::class.java.name)
+            )
+        )
         return myData
     }
 
