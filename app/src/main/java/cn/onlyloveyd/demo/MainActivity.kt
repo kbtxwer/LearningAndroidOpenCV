@@ -95,6 +95,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(AffineActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "极坐标变换",
+                "intent" to activityToIntent(PolarActivity::class.java.name)
+            )
+        )
         return myData
     }
 
