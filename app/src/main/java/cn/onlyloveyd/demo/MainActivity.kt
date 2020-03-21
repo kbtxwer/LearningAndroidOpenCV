@@ -108,6 +108,14 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(GLPyramidActivity::class.java.name)
             )
         )
+
+
+        myData.add(
+            mapOf(
+                "title" to "图像直方图",
+                "intent" to activityToIntent(HistActivity::class.java.name)
+            )
+        )
         return myData
     }
 
