@@ -116,6 +116,14 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(HistActivity::class.java.name)
             )
         )
+
+
+        myData.add(
+            mapOf(
+                "title" to "图像卷积",
+                "intent" to activityToIntent(Filter2DActivity::class.java.name)
+            )
+        )
         return myData
     }
 
