@@ -109,7 +109,6 @@ class MainActivity : ListActivity() {
             )
         )
 
-
         myData.add(
             mapOf(
                 "title" to "图像直方图",
@@ -117,11 +116,17 @@ class MainActivity : ListActivity() {
             )
         )
 
-
         myData.add(
             mapOf(
                 "title" to "图像卷积",
                 "intent" to activityToIntent(Filter2DActivity::class.java.name)
+            )
+        )
+
+        myData.add(
+            mapOf(
+                "title" to "椒盐噪声",
+                "intent" to activityToIntent(SaltPepperNoiseActivity::class.java.name)
             )
         )
         return myData
