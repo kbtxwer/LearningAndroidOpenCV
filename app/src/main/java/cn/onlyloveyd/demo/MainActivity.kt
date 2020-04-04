@@ -129,6 +129,14 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(SaltPepperNoiseActivity::class.java.name)
             )
         )
+
+
+        myData.add(
+            mapOf(
+                "title" to "高斯噪声",
+                "intent" to activityToIntent(GaussianNoiseActivity::class.java.name)
+            )
+        )
         return myData
     }
 
