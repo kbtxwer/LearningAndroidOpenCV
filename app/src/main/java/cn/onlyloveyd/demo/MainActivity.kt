@@ -137,6 +137,13 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(GaussianNoiseActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "均值滤波",
+                "intent" to activityToIntent(MeanFilterActivity::class.java.name)
+            )
+        )
         return myData
     }
 
