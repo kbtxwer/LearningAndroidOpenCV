@@ -144,6 +144,21 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(MeanFilterActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "方框滤波",
+                "intent" to activityToIntent(BoxFilterActivity::class.java.name)
+            )
+        )
+
+        myData.add(
+            mapOf(
+                "title" to "高斯滤波",
+                "intent" to activityToIntent(GaussianFilterActivity::class.java.name)
+            )
+        )
+
         return myData
     }
 
