@@ -159,6 +159,13 @@ class MainActivity : ListActivity() {
             )
         )
 
+        myData.add(
+            mapOf(
+                "title" to "双边滤波",
+                "intent" to activityToIntent(BilateralFilterActivity::class.java.name)
+            )
+        )
+
         return myData
     }
 
