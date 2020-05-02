@@ -166,6 +166,13 @@ class MainActivity : ListActivity() {
             )
         )
 
+        myData.add(
+            mapOf(
+                "title" to "边缘检测",
+                "intent" to activityToIntent(EdgeDetectionActivity::class.java.name)
+            )
+        )
+
         return myData
     }
 
