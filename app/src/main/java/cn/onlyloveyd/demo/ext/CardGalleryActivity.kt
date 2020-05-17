@@ -41,6 +41,7 @@ abstract class CardGalleryActivity : AppCompatActivity() {
             }
         }
 
+        mBinding.container.offscreenPageLimit = 1
         mBinding.container.apply {
             offscreenPageLimit = 1
             val recyclerView = getChildAt(0) as RecyclerView

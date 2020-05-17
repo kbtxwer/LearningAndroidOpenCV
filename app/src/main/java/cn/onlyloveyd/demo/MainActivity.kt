@@ -173,6 +173,20 @@ class MainActivity : ListActivity() {
             )
         )
 
+        myData.add(
+            mapOf(
+                "title" to "Sobel算子边缘检测",
+                "intent" to activityToIntent(SobelEdgeDetectionActivity::class.java.name)
+            )
+        )
+
+        myData.add(
+            mapOf(
+                "title" to "Scharr算子边缘检测",
+                "intent" to activityToIntent(ScharrEdgeDetectionActivity::class.java.name)
+            )
+        )
+
         return myData
     }
 
