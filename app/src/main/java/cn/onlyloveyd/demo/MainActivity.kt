@@ -187,6 +187,13 @@ class MainActivity : ListActivity() {
             )
         )
 
+        myData.add(
+            mapOf(
+                "title" to "Laplacian算子边缘检测",
+                "intent" to activityToIntent(LaplacianEdgeDetectionActivity::class.java.name)
+            )
+        )
+
         return myData
     }
 
