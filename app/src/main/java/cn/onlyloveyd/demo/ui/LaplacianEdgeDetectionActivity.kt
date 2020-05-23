@@ -78,5 +78,4 @@ class LaplacianEdgeDetectionActivity : AppCompatActivity() {
         Core.convertScaleAbs(result, result)
         showMat(mBinding.ivResult, result)
     }
-
 }
