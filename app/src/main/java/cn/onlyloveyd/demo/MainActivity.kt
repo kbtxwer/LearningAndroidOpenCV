@@ -194,6 +194,14 @@ class MainActivity : ListActivity() {
             )
         )
 
+        myData.add(
+            mapOf(
+                "title" to "Canny边缘检测",
+                "intent" to activityToIntent(CannyEdgeDetectionActivity::class.java.name)
+            )
+        )
+
+
         return myData
     }
 
