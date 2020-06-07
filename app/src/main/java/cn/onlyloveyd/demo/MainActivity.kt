@@ -201,6 +201,12 @@ class MainActivity : ListActivity() {
             )
         )
 
+        myData.add(
+            mapOf(
+                "title" to "连通域分析",
+                "intent" to activityToIntent(ConnectedComponentsActivity::class.java.name)
+            )
+        )
 
         return myData
     }
