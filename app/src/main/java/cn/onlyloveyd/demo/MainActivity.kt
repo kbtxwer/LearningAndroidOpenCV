@@ -208,6 +208,12 @@ class MainActivity : ListActivity() {
             )
         )
 
+        myData.add(
+            mapOf(
+                "title" to "图像距离变换",
+                "intent" to activityToIntent(DistanceTransformActivity::class.java.name)
+            )
+        )
         return myData
     }
 
