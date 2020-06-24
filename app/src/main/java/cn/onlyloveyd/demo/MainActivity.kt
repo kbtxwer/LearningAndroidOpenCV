@@ -214,6 +214,19 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(DistanceTransformActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "图像腐蚀",
+                "intent" to activityToIntent(ErosionActivity::class.java.name)
+            )
+        )
+        myData.add(
+            mapOf(
+                "title" to "图像膨胀",
+                "intent" to activityToIntent(DilateActivity::class.java.name)
+            )
+        )
         return myData
     }
 
