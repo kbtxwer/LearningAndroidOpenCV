@@ -227,6 +227,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(DilateActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "形态学操作",
+                "intent" to activityToIntent(MorphologyExActivity::class.java.name)
+            )
+        )
         return myData
     }
 
