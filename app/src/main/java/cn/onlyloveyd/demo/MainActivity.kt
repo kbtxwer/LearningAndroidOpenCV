@@ -233,6 +233,13 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(MorphologyExActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "霍夫直线检测",
+                "intent" to activityToIntent(HoughLineDetectActivity::class.java.name)
+            )
+        )
         return myData
     }
 
