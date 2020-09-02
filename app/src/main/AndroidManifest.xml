@@ -183,6 +183,13 @@
             android:name=".ui.HoughLineDetectActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.HoughCircleDetectActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+
     </application>
 
 </manifest>

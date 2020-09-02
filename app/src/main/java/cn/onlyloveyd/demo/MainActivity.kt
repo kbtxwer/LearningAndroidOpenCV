@@ -240,6 +240,14 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(HoughLineDetectActivity::class.java.name)
             )
         )
+
+
+        myData.add(
+            mapOf(
+                "title" to "霍夫圆检测",
+                "intent" to activityToIntent(HoughCircleDetectActivity::class.java.name)
+            )
+        )
         return myData
     }
 
