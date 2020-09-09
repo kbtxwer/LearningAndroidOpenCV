@@ -248,6 +248,13 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(HoughCircleDetectActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "直线拟合",
+                "intent" to activityToIntent(FitLineActivity::class.java.name)
+            )
+        )
         return myData
     }
 
