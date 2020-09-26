@@ -38,7 +38,7 @@
 | 31   | [Android OpenCV（三十二）：直线检测](https://mp.weixin.qq.com/s/cfMoC6ctwz5oQZwWqUVOyA) |
 | 32   | [Android OpenCV（三十三）：霍夫圆检测](https://mp.weixin.qq.com/s/RQlmjcSsc3-h8408TOhGPA) |
 | 33   | [Android OpenCV（三十四）：直线拟合](https://mp.weixin.qq.com/s/ajeoL1f2GB_kfpmtffAbeQ) |
-| 34   |                                                              |
+| 34   | [Android OpenCV（三十五）：轮廓发现与绘制](https://mp.weixin.qq.com/s/teLC9is4DbaWspmlBRnZcA)                                                             |
 | 35   |                                                              |
 | 36   |                                                              |
 
