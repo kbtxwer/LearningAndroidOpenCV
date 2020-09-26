@@ -8,6 +8,12 @@ import android.app.Application
  * 2020/1/7
  */
 class App : Application() {
+    companion object {
+
+        val TAG = "LearningAndroidOpenCV"
+    }
+
+
     init {
         System.loadLibrary("opencv_java4")
     }

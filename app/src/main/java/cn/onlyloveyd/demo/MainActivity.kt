@@ -255,6 +255,13 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(FitLineActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "轮廓检测",
+                "intent" to activityToIntent(FindContoursActivity::class.java.name)
+            )
+        )
         return myData
     }
 
