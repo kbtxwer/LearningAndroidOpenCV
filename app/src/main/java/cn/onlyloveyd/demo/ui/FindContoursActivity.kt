@@ -12,14 +12,11 @@ import cn.onlyloveyd.demo.R
 import cn.onlyloveyd.demo.databinding.ActivityFindContoursBinding
 import cn.onlyloveyd.demo.ext.showMat
 import org.opencv.android.Utils
-import org.opencv.core.Mat
-import org.opencv.core.MatOfPoint
-import org.opencv.core.Scalar
-import org.opencv.core.Size
+import org.opencv.core.*
 import org.opencv.imgproc.Imgproc
 
 /**
- * 发现轮廓
+ * 轮廓发现、绘制、面积、周长
  * author: yidong
  * 2020/9/19
  */
@@ -91,6 +88,14 @@ class FindContoursActivity : AppCompatActivity() {
             mFlag,
             Imgproc.CHAIN_APPROX_SIMPLE
         )
+
+        for (i in 0 until contours.size) {
+            val area = Imgproc.contourArea(contours[i])
+            val source = MatOfPoint2f()
+            source.fromList(contours[i].toList())
+            val length = Imgproc.arcLength(source, true)
+            Log.d(App.TAG, "轮廓${i}面积：${area}; 周长：${length}")
+        }
 
         if (ignoreLevel) {
             Imgproc.drawContours(
