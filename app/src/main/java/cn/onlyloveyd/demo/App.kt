@@ -10,7 +10,7 @@ import android.app.Application
 class App : Application() {
     companion object {
 
-        val TAG = "LearningAndroidOpenCV"
+        const val TAG = "LearningAndroidOpenCV"
     }
 
 

@@ -48,7 +48,7 @@ class FindContoursActivity : AppCompatActivity() {
         mBinding.ignoreLevel.setOnCheckedChangeListener { _, isChecked ->
             ignoreLevel = isChecked
         }
-        val bgr = Utils.loadResource(this, R.drawable.hierarchy)
+        val bgr = Utils.loadResource(this, R.drawable.opencv)
         mSource = Mat()
         Imgproc.cvtColor(bgr, mSource, Imgproc.COLOR_BGR2RGB)
         mBinding.ivLena.showMat(mSource)
@@ -77,7 +77,7 @@ class FindContoursActivity : AppCompatActivity() {
         Imgproc.cvtColor(mSource, gray, Imgproc.COLOR_BGR2GRAY)
         Imgproc.GaussianBlur(gray, gray, Size(13.0, 13.0), 4.0, 4.0)
         val binary = Mat()
-        Imgproc.threshold(gray, binary, 170.0, 255.0, Imgproc.THRESH_BINARY and Imgproc.THRESH_OTSU)
+        Imgproc.threshold(gray, binary, 50.0, 255.0, Imgproc.THRESH_BINARY and Imgproc.THRESH_OTSU)
 
         val contours = mutableListOf<MatOfPoint>()
         val hierarchy = Mat()
@@ -102,8 +102,8 @@ class FindContoursActivity : AppCompatActivity() {
                 tmp,
                 contours,
                 -1,
-                Scalar(255.0, 0.0, 0.0),
-                2,
+                Scalar(255.0, 255.0, 0.0),
+                4,
                 Imgproc.LINE_AA
             )
         } else {
@@ -111,8 +111,8 @@ class FindContoursActivity : AppCompatActivity() {
                 tmp,
                 contours,
                 -1,
-                Scalar(255.0, 0.0, 0.0),
-                2,
+                Scalar(255.0, 255.0, 0.0),
+                4,
                 Imgproc.LINE_AA,
                 hierarchy,
                 level

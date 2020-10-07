@@ -262,6 +262,13 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(FindContoursActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "轮廓外接多边形",
+                "intent" to activityToIntent(ContourPolyActivity::class.java.name)
+            )
+        )
         return myData
     }
 
