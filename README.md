@@ -1,3 +1,4 @@
+![](http://qiniu.fultter.club/Fv2JFoQzSAUUlCgzZvmj-3_659oF)
 # LearningAndroidOpenCV
 从零开始学习Android OpenCV
 
