@@ -269,6 +269,13 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(ContourPolyActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "凸包检测",
+                "intent" to activityToIntent(ConvexHullActivity::class.java.name)
+            )
+        )
         return myData
     }
 
