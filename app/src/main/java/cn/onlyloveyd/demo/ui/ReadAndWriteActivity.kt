@@ -1,17 +1,12 @@
 package cn.onlyloveyd.demo.ui
 
-import android.Manifest
-import android.content.pm.PackageManager
 import android.graphics.Bitmap
-import android.os.Build
+import android.graphics.BitmapFactory
 import android.os.Bundle
-import android.os.Environment
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import cn.onlyloveyd.demo.R
 import cn.onlyloveyd.demo.databinding.ActivityReadAndWriteBinding
@@ -19,6 +14,7 @@ import org.opencv.android.Utils
 import org.opencv.core.Mat
 import org.opencv.imgcodecs.Imgcodecs
 import java.io.File
+import java.io.FileOutputStream
 
 
 /**
@@ -27,10 +23,9 @@ import java.io.File
  * 2020/1/7
  */
 class ReadAndWriteActivity : AppCompatActivity() {
-    private val STORAGE_PERMISSION_REQUEST_CODE = 500
     private lateinit var mBinding: ActivityReadAndWriteBinding
-    private val mLenaPath =
-        Environment.getExternalStorageDirectory().path + File.separator + "lena.png"
+    private val sLeanName = "lena.png"
+    private lateinit var mLenaPath: String
     private var currentImreadMode = Imgcodecs.IMREAD_UNCHANGED
         set(value) {
             field = value
@@ -42,21 +37,23 @@ class ReadAndWriteActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = DataBindingUtil.setContentView(this, R.layout.activity_read_and_write)
         supportActionBar?.title = intent.getStringExtra("title")
-        if (checkStoragePermission()) {
-            onImreadModeChange()
-        } else {
-            requestStoragePermission()
-        }
+        mLenaPath = cacheDir.path + File.separator + sLeanName
+
+        drawableToFile(
+            R.drawable.lena,
+            sLeanName
+        )
+        onImreadModeChange()
         mBinding.btSave.setOnClickListener {
-            if (checkStoragePermission()) {
-                saveMatToStorage(currentMat)
-            } else {
-                requestStoragePermission()
-            }
+            saveMatToStorage(currentMat)
         }
     }
 
     private fun loadLenaFromFile() {
+        if (!File(mLenaPath).exists()) {
+            Toast.makeText(this, "文件不存在", Toast.LENGTH_SHORT).show()
+            return
+        }
         currentMat = Imgcodecs.imread(mLenaPath, currentImreadMode)
         val bitmap =
             Bitmap.createBitmap(currentMat.width(), currentMat.height(), Bitmap.Config.ARGB_8888)
@@ -70,53 +67,11 @@ class ReadAndWriteActivity : AppCompatActivity() {
     }
 
     private fun saveMatToStorage(source: Mat) {
-        val file =
-            File(Environment.getExternalStorageDirectory().path + File.separator + "${System.currentTimeMillis()}.jpg")
+        val file = File(cacheDir.path + File.separator + "${System.currentTimeMillis()}.jpg")
         if (!file.exists()) {
             file.createNewFile()
         }
         Imgcodecs.imwrite(file.path, source)
-    }
-
-    private fun checkStoragePermission(): Boolean {
-        return ContextCompat.checkSelfPermission(
-            this,
-            Manifest.permission.WRITE_EXTERNAL_STORAGE
-        ) == PackageManager.PERMISSION_GRANTED
-    }
-
-    private fun requestStoragePermission() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            requestPermissions(
-                arrayOf(Manifest.permission.WRITE_EXTERNAL_STORAGE),
-                STORAGE_PERMISSION_REQUEST_CODE
-            )
-        }
-    }
-
-    override fun onRequestPermissionsResult(
-        requestCode: Int,
-        permissions: Array<out String>,
-        grantResults: IntArray
-    ) {
-        if (requestCode == STORAGE_PERMISSION_REQUEST_CODE && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-            loadLenaFromFile()
-        } else {
-            AlertDialog.Builder(this)
-                .setTitle("权限管理")
-                .setMessage("请允许读写外部存储权限")
-                .setPositiveButton(
-                    "确认"
-                ) { _, _ -> requestStoragePermission() }
-                .setNegativeButton(
-                    "取消"
-                ) { dialog, _ ->
-                    dialog.dismiss()
-                    Toast.makeText(this@ReadAndWriteActivity, "无法保存生成的灰色图片", Toast.LENGTH_SHORT)
-                        .show()
-                }
-                .show()
-        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -165,4 +120,25 @@ class ReadAndWriteActivity : AppCompatActivity() {
             else -> "IMREAD_UNCHANGED"
         }
     }
+
+    /**
+     * Drawable to File
+     */
+    private fun drawableToFile(drawableId: Int, fileName: String): File? {
+        val bitmap: Bitmap = BitmapFactory.decodeResource(resources, drawableId)
+        val defaultImgPath = "$cacheDir/$fileName"
+        val file = File(defaultImgPath)
+        val fOut = FileOutputStream(file)
+        try {
+            file.createNewFile()
+            bitmap.compress(Bitmap.CompressFormat.PNG, 20, fOut)
+            fOut.flush()
+        } catch (e: Exception) {
+            e.printStackTrace()
+        } finally {
+            fOut.close()
+        }
+        return file
+    }
+
 }
