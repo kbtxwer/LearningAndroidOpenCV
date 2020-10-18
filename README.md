@@ -42,6 +42,7 @@
 | 34   | [Android OpenCV（三十五）：轮廓发现与绘制](https://mp.weixin.qq.com/s/teLC9is4DbaWspmlBRnZcA)                                                             |
 | 35   | [Android OpenCV（三十六）：轮廓面积与周长](https://mp.weixin.qq.com/s/65g0FjNOjSa_SZnn2KB6kg)                                                               |
 | 36   | [Android OpenCV（三十七）：轮廓外接多边形](https://mp.weixin.qq.com/s/k1XoftYDd_obuoo8aCm2xA)                                                               |
+| 37   | [Android OpenCV（三十八）：凸包检测](https://mp.weixin.qq.com/s/63mobnSQ5JeC0qzlXm1CWQ)|
 
 ## 关注我
 ![皮卡丘呱](http://qiniu.fultter.club/FgxVOQ_ETGjCAORU37SpzIc_yU71)
