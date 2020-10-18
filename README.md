@@ -45,5 +45,5 @@
 | 37   | [Android OpenCV（三十八）：凸包检测](https://mp.weixin.qq.com/s/63mobnSQ5JeC0qzlXm1CWQ)|
 
 ## 关注我
-![皮卡丘呱](http://qiniu.fultter.club/FgxVOQ_ETGjCAORU37SpzIc_yU71)
+![OpenCV or Android](http://qiniu.fultter.club/FgxVOQ_ETGjCAORU37SpzIc_yU71)
 
