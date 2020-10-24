@@ -276,6 +276,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(ConvexHullActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "模板匹配",
+                "intent" to activityToIntent(MatchTemplateActivity::class.java.name)
+            )
+        )
         return myData
     }
 
