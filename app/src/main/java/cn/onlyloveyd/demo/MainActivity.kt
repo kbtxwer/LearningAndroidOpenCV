@@ -282,6 +282,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(MatchTemplateActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "QR二维码检测",
+                "intent" to activityToIntent(QRDetectActivity::class.java.name)
+            )
+        )
         return myData
     }
 
