@@ -1,4 +1,4 @@
-![](http://qiniu.fultter.club/Fv2JFoQzSAUUlCgzZvmj-3_659oF)
+![OpenCV or Android](./logo/logo.jpg)
 # LearningAndroidOpenCV
 从零开始学习Android OpenCV
 
@@ -44,7 +44,9 @@
 | 36   | [Android OpenCV（三十七）：轮廓外接多边形](https://mp.weixin.qq.com/s/k1XoftYDd_obuoo8aCm2xA)                                                               |
 | 37   | [Android OpenCV（三十八）：凸包检测](https://mp.weixin.qq.com/s/63mobnSQ5JeC0qzlXm1CWQ)|
 | 38   | [Android OpenCV（三十九）：模板匹配](https://mp.weixin.qq.com/s/Qxn39TbYoJgbdorw_ZEijQ)|
+| 39   | [Android OpenCV（四十）：QR二维码检测和识别](https://mp.weixin.qq.com/s/tIJ09FdtUGTFJyHMPfA6sg)|
+
 
 ## 关注我
-![OpenCV or Android](http://qiniu.fultter.club/FgxVOQ_ETGjCAORU37SpzIc_yU71)
+![OpenCV or Android](./logo/wechat_qrcode.jpg)
 
