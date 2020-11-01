@@ -1,4 +1,4 @@
-![OpenCV or Android](./logo/logo.jpg)
+![OpenCV or Android](./logo/logo.png)
 # LearningAndroidOpenCV
 从零开始学习Android OpenCV
 
