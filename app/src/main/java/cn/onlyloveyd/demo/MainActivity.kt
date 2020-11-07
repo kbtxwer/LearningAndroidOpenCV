@@ -288,6 +288,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(QRDetectActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "图像分割（漫水填充法）",
+                "intent" to activityToIntent(FloodFillActivity::class.java.name)
+            )
+        )
         return myData
     }
 
