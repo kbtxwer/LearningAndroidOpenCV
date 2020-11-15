@@ -31,7 +31,7 @@ class HoughCircleDetectActivity : AppCompatActivity() {
 
         mGray = Mat()
         mRgb = Mat()
-        val source = Utils.loadResource(this, R.drawable.coins)
+        val source = Utils.loadResource(this, R.drawable.lotsofcoins)
         Imgproc.cvtColor(source, mGray, Imgproc.COLOR_BGR2GRAY)
         Imgproc.cvtColor(source, mRgb, Imgproc.COLOR_BGR2RGB)
         mBinding.ivLena.showMat(mRgb)

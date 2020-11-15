@@ -294,6 +294,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(FloodFillActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "图像分割（分水岭法）",
+                "intent" to activityToIntent(WaterShedActivity::class.java.name)
+            )
+        )
         return myData
     }
 
