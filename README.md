@@ -47,6 +47,7 @@
 | 39   | [Android OpenCV（四十）：QR二维码检测和识别](https://mp.weixin.qq.com/s/tIJ09FdtUGTFJyHMPfA6sg)|
 | 40   | [Android OpenCV（四十一）：图像分割（漫水填充法）](https://mp.weixin.qq.com/s/T5ulYqw4-tNgCUsg35-tSg)|
 | 40   | [Android OpenCV（四十二）：图像分割（分水岭法）](https://mp.weixin.qq.com/s/YhOfsHqd0Xh63-tXZ5xXcQ)|
+| 40   | [Android OpenCV（四十三）：图像分割（Grabcut）](https://mp.weixin.qq.com/s/lyUIKLsCwg2nbsjhS7kfbw)|
 
 
 ## 关注我

@@ -300,6 +300,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(WaterShedActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "图像分割（Grabcut）",
+                "intent" to activityToIntent(GrabcutActivity::class.java.name)
+            )
+        )
         return myData
     }
 
