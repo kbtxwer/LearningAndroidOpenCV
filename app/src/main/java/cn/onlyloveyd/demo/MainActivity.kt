@@ -306,6 +306,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(GrabcutActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "图像分割（均值漂移）",
+                "intent" to activityToIntent(MeanShiftActivity::class.java.name)
+            )
+        )
         return myData
     }
 
