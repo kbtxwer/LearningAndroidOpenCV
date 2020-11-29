@@ -312,6 +312,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(MeanShiftActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "图像修复",
+                "intent" to activityToIntent(InPaintActivity::class.java.name)
+            )
+        )
         return myData
     }
 
