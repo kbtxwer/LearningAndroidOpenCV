@@ -48,6 +48,8 @@
 | 40   | [Android OpenCV（四十一）：图像分割（漫水填充法）](https://mp.weixin.qq.com/s/T5ulYqw4-tNgCUsg35-tSg)|
 | 40   | [Android OpenCV（四十二）：图像分割（分水岭法）](https://mp.weixin.qq.com/s/YhOfsHqd0Xh63-tXZ5xXcQ)|
 | 40   | [Android OpenCV（四十三）：图像分割（Grabcut）](https://mp.weixin.qq.com/s/lyUIKLsCwg2nbsjhS7kfbw)|
+| 40   | [Android OpenCV（四十四）：图像分割（均值漂移）](https://mp.weixin.qq.com/s/qNiI6MStRvm4LFiPhMiKWw)|
+| 40   | [Android OpenCV（四十五）：图像修复](https://mp.weixin.qq.com/s/npomqlMbZj83LjY3nEwMcg)|
 
 
 ## 关注我
