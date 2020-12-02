@@ -318,6 +318,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(InPaintActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "非真实渲染",
+                "intent" to activityToIntent(NonPhotoRealisticRenderingActivity::class.java.name)
+            )
+        )
         return myData
     }
 
