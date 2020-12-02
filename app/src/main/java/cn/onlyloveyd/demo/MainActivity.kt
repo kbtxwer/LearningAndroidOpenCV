@@ -130,7 +130,6 @@ class MainActivity : ListActivity() {
             )
         )
 
-
         myData.add(
             mapOf(
                 "title" to "高斯噪声",
