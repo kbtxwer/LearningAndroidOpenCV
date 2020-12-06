@@ -323,6 +323,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(NonPhotoRealisticRenderingActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "脱色",
+                "intent" to activityToIntent(DecolorActivity::class.java.name)
+            )
+        )
         return myData
     }
 
