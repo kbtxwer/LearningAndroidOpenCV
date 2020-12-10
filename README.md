@@ -50,6 +50,8 @@
 | 40   | [Android OpenCV（四十三）：图像分割（Grabcut）](https://mp.weixin.qq.com/s/lyUIKLsCwg2nbsjhS7kfbw)|
 | 40   | [Android OpenCV（四十四）：图像分割（均值漂移）](https://mp.weixin.qq.com/s/qNiI6MStRvm4LFiPhMiKWw)|
 | 40   | [Android OpenCV（四十五）：图像修复](https://mp.weixin.qq.com/s/npomqlMbZj83LjY3nEwMcg)|
+| 40   | [Android OpenCV（四十六）：非真实渲染](https://mp.weixin.qq.com/s/58WQTwTH--swp49xR9KnFw)|
+| 40   | [Android OpenCV（四十七）：脱色](https://mp.weixin.qq.com/s/bqtzJvLX9VJM1PAqVydZOQ)|
 
 
 ## 关注我
