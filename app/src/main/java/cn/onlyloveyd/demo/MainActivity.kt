@@ -329,6 +329,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(DecolorActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "泊松图像编辑",
+                "intent" to activityToIntent(PoissonImageEditActivity::class.java.name)
+            )
+        )
         return myData
     }
 

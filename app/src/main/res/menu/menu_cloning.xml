@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/normal_cloning"
+        android:title="1) Normal Cloning" />
+    <item
+        android:id="@+id/mixed_cloning"
+        android:title="2) Mixed Cloning" />
+
+    <item
+        android:id="@+id/monochrome_transfer"
+        android:title="3) Monochrome Transfer" />
+
+    <item
+        android:id="@+id/local_color_change"
+        android:title="4) Local Color Change" />
+    <item
+        android:id="@+id/local_illumination_change"
+        android:title="5) Local Illumination Change" />
+
+    <item
+        android:id="@+id/texture_flattening"
+        android:title="6) Texture Flattening " />
+
+
+</menu>
