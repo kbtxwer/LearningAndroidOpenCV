@@ -221,9 +221,12 @@
             android:name=".ui.DecolorActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
-
         <activity
             android:name=".ui.PoissonImageEditActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.IntegralActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
     </application>

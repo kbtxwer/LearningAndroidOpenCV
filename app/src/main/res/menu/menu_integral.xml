@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_integral_sum"
+        android:title="和表归一化" />
+    <item
+        android:id="@+id/menu_integral_blur"
+        android:title="图像模糊" />
+</menu>

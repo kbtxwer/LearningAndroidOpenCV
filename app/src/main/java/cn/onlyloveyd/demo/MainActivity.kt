@@ -335,6 +335,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(PoissonImageEditActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "图像积分图",
+                "intent" to activityToIntent(IntegralActivity::class.java.name)
+            )
+        )
         return myData
     }
 
