@@ -46,12 +46,14 @@
 | 38   | [Android OpenCV（三十九）：模板匹配](https://mp.weixin.qq.com/s/Qxn39TbYoJgbdorw_ZEijQ)|
 | 39   | [Android OpenCV（四十）：QR二维码检测和识别](https://mp.weixin.qq.com/s/tIJ09FdtUGTFJyHMPfA6sg)|
 | 40   | [Android OpenCV（四十一）：图像分割（漫水填充法）](https://mp.weixin.qq.com/s/T5ulYqw4-tNgCUsg35-tSg)|
-| 40   | [Android OpenCV（四十二）：图像分割（分水岭法）](https://mp.weixin.qq.com/s/YhOfsHqd0Xh63-tXZ5xXcQ)|
-| 40   | [Android OpenCV（四十三）：图像分割（Grabcut）](https://mp.weixin.qq.com/s/lyUIKLsCwg2nbsjhS7kfbw)|
-| 40   | [Android OpenCV（四十四）：图像分割（均值漂移）](https://mp.weixin.qq.com/s/qNiI6MStRvm4LFiPhMiKWw)|
-| 40   | [Android OpenCV（四十五）：图像修复](https://mp.weixin.qq.com/s/npomqlMbZj83LjY3nEwMcg)|
-| 40   | [Android OpenCV（四十六）：非真实渲染](https://mp.weixin.qq.com/s/58WQTwTH--swp49xR9KnFw)|
-| 40   | [Android OpenCV（四十七）：脱色](https://mp.weixin.qq.com/s/bqtzJvLX9VJM1PAqVydZOQ)|
+| 41   | [Android OpenCV（四十二）：图像分割（分水岭法）](https://mp.weixin.qq.com/s/YhOfsHqd0Xh63-tXZ5xXcQ)|
+| 42   | [Android OpenCV（四十三）：图像分割（Grabcut）](https://mp.weixin.qq.com/s/lyUIKLsCwg2nbsjhS7kfbw)|
+| 43   | [Android OpenCV（四十四）：图像分割（均值漂移）](https://mp.weixin.qq.com/s/qNiI6MStRvm4LFiPhMiKWw)|
+| 44   | [Android OpenCV（四十五）：图像修复](https://mp.weixin.qq.com/s/npomqlMbZj83LjY3nEwMcg)|
+| 45   | [Android OpenCV（四十六）：非真实渲染](https://mp.weixin.qq.com/s/58WQTwTH--swp49xR9KnFw)|
+| 46   | [Android OpenCV（四十七）：脱色](https://mp.weixin.qq.com/s/bqtzJvLX9VJM1PAqVydZOQ)|
+| 47   | [Android OpenCV（四十八）：Poisson图像编辑](https://mp.weixin.qq.com/s/_V7QmhZZSdaKe0-PJg8YlQ)|
+| 48   | [Android OpenCV（四十九）：图像积分图](https://mp.weixin.qq.com/s/UwehZgdCmAZeawPjq3cBRw)|
 
 
 ## 关注我

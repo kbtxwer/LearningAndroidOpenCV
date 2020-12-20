@@ -341,6 +341,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(IntegralActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "图像翻转",
+                "intent" to activityToIntent(FlipActivity::class.java.name)
+            )
+        )
         return myData
     }
 
