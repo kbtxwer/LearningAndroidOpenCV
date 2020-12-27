@@ -347,6 +347,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(FlipActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "图像插值",
+                "intent" to activityToIntent(ResizeActivity::class.java.name)
+            )
+        )
         return myData
     }
 
