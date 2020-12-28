@@ -54,6 +54,8 @@
 | 46   | [Android OpenCV（四十七）：脱色](https://mp.weixin.qq.com/s/bqtzJvLX9VJM1PAqVydZOQ)|
 | 47   | [Android OpenCV（四十八）：Poisson图像编辑](https://mp.weixin.qq.com/s/_V7QmhZZSdaKe0-PJg8YlQ)|
 | 48   | [Android OpenCV（四十九）：图像积分图](https://mp.weixin.qq.com/s/UwehZgdCmAZeawPjq3cBRw)|
+| 49   | [Android OpenCV（五十）：图像翻转](https://mp.weixin.qq.com/s/etmlBqMMvERV9LuDkusIzw)|
+| 50   | [Android OpenCV（五十一）：图像插值](https://mp.weixin.qq.com/s/OA02Dukew_8qcGY5or2ibQ)|
 
 
 ## 关注我
