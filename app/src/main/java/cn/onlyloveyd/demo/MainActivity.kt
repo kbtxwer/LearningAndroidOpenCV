@@ -353,6 +353,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(ResizeActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "Harris角点检测",
+                "intent" to activityToIntent(HarrisActivity::class.java.name)
+            )
+        )
         return myData
     }
 
