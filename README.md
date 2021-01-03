@@ -39,9 +39,9 @@
 | 31   | [Android OpenCV（三十二）：直线检测](https://mp.weixin.qq.com/s/cfMoC6ctwz5oQZwWqUVOyA) |
 | 32   | [Android OpenCV（三十三）：霍夫圆检测](https://mp.weixin.qq.com/s/RQlmjcSsc3-h8408TOhGPA) |
 | 33   | [Android OpenCV（三十四）：直线拟合](https://mp.weixin.qq.com/s/ajeoL1f2GB_kfpmtffAbeQ) |
-| 34   | [Android OpenCV（三十五）：轮廓发现与绘制](https://mp.weixin.qq.com/s/teLC9is4DbaWspmlBRnZcA)                                                             |
-| 35   | [Android OpenCV（三十六）：轮廓面积与周长](https://mp.weixin.qq.com/s/65g0FjNOjSa_SZnn2KB6kg)                                                               |
-| 36   | [Android OpenCV（三十七）：轮廓外接多边形](https://mp.weixin.qq.com/s/k1XoftYDd_obuoo8aCm2xA)                                                               |
+| 34   | [Android OpenCV（三十五）：轮廓发现与绘制](https://mp.weixin.qq.com/s/teLC9is4DbaWspmlBRnZcA)  |
+| 35   | [Android OpenCV（三十六）：轮廓面积与周长](https://mp.weixin.qq.com/s/65g0FjNOjSa_SZnn2KB6kg) |
+| 36   | [Android OpenCV（三十七）：轮廓外接多边形](https://mp.weixin.qq.com/s/k1XoftYDd_obuoo8aCm2xA)  |
 | 37   | [Android OpenCV（三十八）：凸包检测](https://mp.weixin.qq.com/s/63mobnSQ5JeC0qzlXm1CWQ)|
 | 38   | [Android OpenCV（三十九）：模板匹配](https://mp.weixin.qq.com/s/Qxn39TbYoJgbdorw_ZEijQ)|
 | 39   | [Android OpenCV（四十）：QR二维码检测和识别](https://mp.weixin.qq.com/s/tIJ09FdtUGTFJyHMPfA6sg)|
@@ -56,6 +56,7 @@
 | 48   | [Android OpenCV（四十九）：图像积分图](https://mp.weixin.qq.com/s/UwehZgdCmAZeawPjq3cBRw)|
 | 49   | [Android OpenCV（五十）：图像翻转](https://mp.weixin.qq.com/s/etmlBqMMvERV9LuDkusIzw)|
 | 50   | [Android OpenCV（五十一）：图像插值](https://mp.weixin.qq.com/s/OA02Dukew_8qcGY5or2ibQ)|
+| 51   | [Android OpenCV（五十二）：Harris角点检测](https://mp.weixin.qq.com/s/B6-Q7W1-SP_xwyW1vGBb2A)|
 
 
 ## 关注我
