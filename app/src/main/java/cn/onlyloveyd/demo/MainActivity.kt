@@ -359,6 +359,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(HarrisActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "Shi-Tomas角点检测",
+                "intent" to activityToIntent(ShiTomasiActivity::class.java.name)
+            )
+        )
         return myData
     }
 
