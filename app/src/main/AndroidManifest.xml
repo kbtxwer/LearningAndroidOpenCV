@@ -245,6 +245,12 @@
             android:name=".ui.ShiTomasiActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.CameraPreviewActivity"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+
     </application>
 
 </manifest>
