@@ -5,7 +5,7 @@
 ## 番外文章
 |序号|文章链接|
 | ---- | ----- |
-|Android OpenCV 摄像头实时预览|https://mp.weixin.qq.com/s/bvZylPUA6waDk0NbVSa2ow|
+|0|[Android OpenCV 摄像头实时预览](https://mp.weixin.qq.com/s/bvZylPUA6waDk0NbVSa2ow)|
 
 ## 系列文章
 | 序号 | 文章链接                                                     |
