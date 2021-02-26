@@ -19,7 +19,6 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning,LockedOrientationActivity">
 
-
         <provider
             android:name="androidx.core.content.FileProvider"
             android:authorities="${applicationId}.fileprovider"
@@ -243,6 +242,10 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.ShiTomasiActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.CornerSubPixActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
 

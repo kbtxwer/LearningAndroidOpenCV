@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/video_sample_navigation"
+    app:startDestination="@id/videoSampleFragment">
+
+    <fragment
+        android:id="@+id/videoSampleFragment"
+        android:name="cn.onlyloveyd.demo.ui.video.VideoSampleFragment"
+        android:label="VideoSampleFragment"
+        tools:layout="@layout/fragment_video_sample">
+
+        <action
+            android:id="@+id/to_read_write_fragment"
+            app:destination="@id/videoReadWriteFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/videoReadWriteFragment"
+        android:name="cn.onlyloveyd.demo.ui.video.VideoReadWriteFragment"
+        android:label="VideoReadWriteFragment"
+        tools:layout="@layout/fragment_video_read_write" />
+</navigation>

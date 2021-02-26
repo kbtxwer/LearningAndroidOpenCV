@@ -367,6 +367,12 @@ class MainActivity : ListActivity() {
         )
         myData.add(
             mapOf(
+                "title" to "亚像素级别角点检测",
+                "intent" to activityToIntent(CornerSubPixActivity::class.java.name)
+            )
+        )
+        myData.add(
+            mapOf(
                 "title" to "OpenCV Camera Preview",
                 "intent" to activityToIntent(CameraPreviewActivity::class.java.name)
             )
