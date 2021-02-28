@@ -63,6 +63,7 @@
 | 50   | [Android OpenCV（五十一）：图像插值](https://mp.weixin.qq.com/s/OA02Dukew_8qcGY5or2ibQ)|
 | 51   | [Android OpenCV（五十二）：Harris角点检测](https://mp.weixin.qq.com/s/B6-Q7W1-SP_xwyW1vGBb2A)|
 | 52   | [Android OpenCV（五十三）：Shi-Tomasi角点检测](https://mp.weixin.qq.com/s/NLHpNb0Nwp1NLlh4oxgUJg)|
+| 53   | [Android OpenCV（五十四）：亚像素角点检测](https://mp.weixin.qq.com/s/NLHpNb0Nwp1NLlh4oxgUJg)|
 
 ## 关注我
 ![OpenCV or Android](./logo/wechat_qrcode.jpg)
