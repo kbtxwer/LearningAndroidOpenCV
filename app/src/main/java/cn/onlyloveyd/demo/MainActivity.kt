@@ -371,6 +371,13 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(CornerSubPixActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "ORB特征点检测",
+                "intent" to activityToIntent(ORBActivity::class.java.name)
+            )
+        )
         myData.add(
             mapOf(
                 "title" to "OpenCV Camera Preview",

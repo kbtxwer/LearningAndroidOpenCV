@@ -248,6 +248,10 @@
             android:name=".ui.CornerSubPixActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ORBActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
 
         <activity
             android:name=".ui.CameraPreviewActivity"
