@@ -99,6 +99,7 @@ class ORBBFMatchActivity : AppCompatActivity() {
         )
         orbDetector.detect(source, keyPoints)
         orbDetector.compute(source, keyPoints, descriptor)
+        Log.e(App.TAG, "count = ${keyPoints.size()}")
     }
 
     override fun onDestroy() {
