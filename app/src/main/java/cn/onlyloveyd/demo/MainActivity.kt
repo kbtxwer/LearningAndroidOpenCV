@@ -378,6 +378,13 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(ORBActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "ORB特征点暴力匹配",
+                "intent" to activityToIntent(ORBBFMatchActivity::class.java.name)
+            )
+        )
         myData.add(
             mapOf(
                 "title" to "OpenCV Camera Preview",

@@ -252,7 +252,10 @@
             android:name=".ui.ORBActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
-
+        <activity
+            android:name=".ui.ORBBFMatchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.CameraPreviewActivity"
             android:exported="false"
