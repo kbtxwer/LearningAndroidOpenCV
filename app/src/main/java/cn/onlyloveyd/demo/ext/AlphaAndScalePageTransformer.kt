@@ -4,16 +4,15 @@ import android.view.View
 import androidx.viewpager2.widget.ViewPager2
 import kotlin.math.abs
 
-
 class AlphaAndScalePageTransformer : ViewPager2.PageTransformer {
-    private val SCALE_MAX = 0.8f
-    private val ALPHA_MAX = 0.5f
+    private val SCALEMAX = 0.8f
+    private val ALPHAMAX = 0.5f
 
     override fun transformPage(page: View, position: Float) {
         val scale =
-            if (position < 0) (1 - SCALE_MAX) * position + 1 else (SCALE_MAX - 1) * position + 1
+            if (position < 0) (1 - SCALEMAX) * position + 1 else (SCALEMAX - 1) * position + 1
         val alpha =
-            if (position < 0) (1 - ALPHA_MAX) * position + 1 else (ALPHA_MAX - 1) * position + 1
+            if (position < 0) (1 - ALPHAMAX) * position + 1 else (ALPHAMAX - 1) * position + 1
         if (position < 0) {
             page.pivotX = page.width.toFloat()
             page.pivotY = (page.height / 2).toFloat()

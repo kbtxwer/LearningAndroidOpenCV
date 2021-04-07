@@ -48,7 +48,7 @@ class SaltPepperNoiseActivity : AppCompatActivity() {
         try {
             number = mBinding.etNoiseNumber.text.toString().toInt()
         } catch (e: NumberFormatException) {
-
+            e.printStackTrace()
         }
         for (k in 0..number) {
             val i = (0..1000).random() % source.cols()

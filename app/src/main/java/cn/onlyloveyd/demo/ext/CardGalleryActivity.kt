@@ -53,7 +53,9 @@ abstract class CardGalleryActivity : AppCompatActivity() {
         }
         val compositePageTransformer = CompositePageTransformer()
         compositePageTransformer.addTransformer(AlphaAndScalePageTransformer())
-        compositePageTransformer.addTransformer(MarginPageTransformer(10))
+
+        val marginPx = 10
+        compositePageTransformer.addTransformer(MarginPageTransformer(marginPx))
         mBinding.container.setPageTransformer(compositePageTransformer)
     }
 
@@ -91,5 +93,4 @@ abstract class CardGalleryActivity : AppCompatActivity() {
         }
         super.onDestroy()
     }
-
 }

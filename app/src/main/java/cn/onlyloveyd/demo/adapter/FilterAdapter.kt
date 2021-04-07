@@ -39,7 +39,7 @@ class FilterAdapter(private val context: Context, private var dataList: ArrayLis
                 try {
                     dataList[position] = s.toString().toFloat()
                 } catch (e: NumberFormatException) {
-
+                    e.printStackTrace()
                 }
             }
 
@@ -47,8 +47,6 @@ class FilterAdapter(private val context: Context, private var dataList: ArrayLis
             }
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-
-
             }
         }
 

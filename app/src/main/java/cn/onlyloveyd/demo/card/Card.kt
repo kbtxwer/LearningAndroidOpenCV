@@ -13,8 +13,8 @@ class Card constructor(private val name: String, private val bitmap: Bitmap) {
     }
 
     companion object {
-        val ARG_NAME = "card_name"
-        val ARG_BITMAP = "card_bitmap"
+        const val ARG_NAME = "card_name"
+        const val ARG_BITMAP = "card_bitmap"
     }
 
     fun recycle() {

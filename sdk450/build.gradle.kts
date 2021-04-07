@@ -115,13 +115,13 @@ android {
     }
 
     buildTypes {
-        getByName("debug") {
+        named("debug") {
             packagingOptions {
                 doNotStrip("**/*.so")
             }
         }
 
-        getByName("release") {
+        named("release") {
             packagingOptions {
                 doNotStrip("**/*.so")
             }
@@ -135,7 +135,7 @@ android {
     }
 
     sourceSets {
-        getByName("main") {
+        named("main") {
             jniLibs.srcDir("native/libs")
             java.srcDir("java/src")
             aidl.srcDir("java/src")

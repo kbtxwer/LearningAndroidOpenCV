@@ -75,11 +75,9 @@ class CameraPreviewActivity : CameraActivity(), CameraBridgeViewBase.CvCameraVie
         mOpenCvCameraView.disableView()
     }
 
-    override fun onCameraViewStarted(width: Int, height: Int) {
-    }
+    override fun onCameraViewStarted(width: Int, height: Int) {}
 
-    override fun onCameraViewStopped() {
-    }
+    override fun onCameraViewStopped() {}
 
     override fun onCameraFrame(inputFrame: CvCameraViewFrame): Mat? {
         return inputFrame.gray()

@@ -56,10 +56,10 @@ class FloodFillActivity : AppCompatActivity() {
                 loDiff = p1.toDouble()
             }
 
-            override fun onStartTrackingTouch(p0: SeekBar?) {
+            override fun onStartTrackingTouch(seekBar: SeekBar?) {
             }
 
-            override fun onStopTrackingTouch(p0: SeekBar?) {
+            override fun onStopTrackingTouch(seekBar: SeekBar?) {
             }
 
         })
