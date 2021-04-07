@@ -87,64 +87,66 @@
 //       }
 //   }
 //
+plugins {
+    id("com.android.library")
+}
 
-apply plugin: 'com.android.library'
+val openCVersionName = "4.5.0"
+val openCVersionCode = ((4 * 100 + 5) * 100 + 0) * 10 + 0
 
-def openCVersionName = "4.5.0"
-def openCVersionCode = ((4 * 100 + 5) * 100 + 0) * 10 + 0
-
-println "OpenCV: " +openCVersionName + " " + project.buildscript.sourceFile
+println("OpenCV: " + openCVersionName + " " + project.buildscript.sourceFile)
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion(26)
 
     defaultConfig {
-        minSdkVersion 21
-        targetSdkVersion 26
+        minSdkVersion(21)
+        targetSdkVersion(26)
 
-        versionCode openCVersionCode
-        versionName openCVersionName
+        versionCode(openCVersionCode)
+        versionName(openCVersionName)
 
         externalNativeBuild {
             cmake {
-                arguments "-DANDROID_STL=c++_shared"
-                targets "opencv_jni_shared"
+                arguments("-DANDROID_STL=c++_shared")
+                targets("opencv_jni_shared")
             }
         }
     }
 
     buildTypes {
-        debug {
+        getByName("debug") {
             packagingOptions {
-                doNotStrip '**/*.so'  // controlled by OpenCV CMake scripts
+                doNotStrip("**/*.so")
             }
         }
-        release {
+
+        getByName("release") {
             packagingOptions {
-                doNotStrip '**/*.so'  // controlled by OpenCV CMake scripts
+                doNotStrip("**/*.so")
             }
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+            isMinifyEnabled = false
+            proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.txt")
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_6
-        targetCompatibility JavaVersion.VERSION_1_6
+        sourceCompatibility = JavaVersion.VERSION_1_6
+        targetCompatibility = JavaVersion.VERSION_1_6
     }
 
     sourceSets {
-        main {
-            jniLibs.srcDirs = ['native/libs']
-            java.srcDirs = ['java/src']
-            aidl.srcDirs = ['java/src']
-            res.srcDirs = ['java/res']
-            manifest.srcFile 'java/AndroidManifest.xml'
+        getByName("main") {
+            jniLibs.srcDir("native/libs")
+            java.srcDir("java/src")
+            aidl.srcDir("java/src")
+            res.srcDir("java/res")
+            manifest.srcFile("java/AndroidManifest.xml")
         }
     }
 
     externalNativeBuild {
         cmake {
-            path (project.projectDir.toString() + '/libcxx_helper/CMakeLists.txt')
+            path(project.projectDir.toString() + "/libcxx_helper/CMakeLists.txt")
         }
     }
 }
