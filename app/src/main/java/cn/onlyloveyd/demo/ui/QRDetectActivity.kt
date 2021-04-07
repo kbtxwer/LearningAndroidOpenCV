@@ -48,7 +48,6 @@ class QRDetectActivity : AppCompatActivity() {
     private lateinit var mPhotoSheet: BottomSheetDialog
     private lateinit var mPhotoOpBinding: LayoutPhotoOpBinding
 
-
     // 请求相机权限
     private val requestCameraPermission =
         registerForActivityResult(ActivityResultContracts.RequestPermission()) {
@@ -71,8 +70,6 @@ class QRDetectActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, "无存储权限", Toast.LENGTH_SHORT).show()
             }
         }
-
-
     private val requestCamera = registerForActivityResult(ActivityResultContracts.TakePicture()) {
         if (it) {
             val bgr = Imgcodecs.imread(mPhotoSavePath, Imgcodecs.IMREAD_COLOR)
@@ -150,7 +147,6 @@ class QRDetectActivity : AppCompatActivity() {
             requestStoragePermission.launch(
                 Manifest.permission.WRITE_EXTERNAL_STORAGE
             )
-
         }
     }
 
