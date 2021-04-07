@@ -1,5 +1,5 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
-
+val kotlinVersion by extra("1.4.30")
 buildscript {
     repositories {
         google()
@@ -29,6 +29,10 @@ tasks {
     }
 }
 
+//tasks.create<Delete>("clean") {
+//    delete(buildDir)
+//}
+
 plugins {
     id("io.gitlab.arturbosch.detekt").version("1.16.0")
 }
@@ -39,7 +43,7 @@ detekt {
     config = files("config/detekt.yml") // 指定采用的规则集文件
     reports { // 指定输出的报告文件类型
         html {
-            enabled = true                        // Enable/Disable HTML report (default: true)
+            enabled = true// Enable/Disable HTML report (default: true)
             destination =
                 file("build/reports/detekt.html") // Path where HTML report will be stored (default:
         }

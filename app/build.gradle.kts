@@ -5,7 +5,6 @@ plugins {
     id("androidx.navigation.safeargs.kotlin")
 }
 
-
 android {
     compileSdkVersion(30)
     buildToolsVersion("29.0.3")
@@ -39,7 +38,8 @@ dependencies {
     implementation("androidx.appcompat:appcompat:1.2.0")
     implementation("androidx.core:core-ktx:1.3.2")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
-    implementation(project(path = ":sdk450"))
+//    implementation(project(path = ":sdk450"))
+    implementation(project(path = ":sdk452"))
     implementation("androidx.recyclerview:recyclerview:1.1.0")
     implementation("androidx.viewpager2:viewpager2:1.0.0")
     implementation("androidx.cardview:cardview:1.0.0")
@@ -57,5 +57,4 @@ dependencies {
     val navVersion = "2.3.4"
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
-
 }
