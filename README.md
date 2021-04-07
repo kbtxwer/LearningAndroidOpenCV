@@ -65,7 +65,7 @@
 | 52   | [Android OpenCV（五十三）：Shi-Tomasi角点检测](https://mp.weixin.qq.com/s/NLHpNb0Nwp1NLlh4oxgUJg)|
 | 53   | [Android OpenCV（五十四）：亚像素角点检测](https://mp.weixin.qq.com/s/NLHpNb0Nwp1NLlh4oxgUJg)|
 | 54   | [Android OpenCV（五十五）：ORB特征点检测](https://mp.weixin.qq.com/s/xRwB6hSpeZ-sZ5Fe7bVPtw)|
-| 55   | [Android OpenCV（五十五）：ORB特征点暴力匹配](https://mp.weixin.qq.com/s/Kh9JtmvpsW9yWomgFsncBw|
+| 55   | [Android OpenCV（五十六）：ORB特征点暴力匹配](https://mp.weixin.qq.com/s/Kh9JtmvpsW9yWomgFsncBw)|
 ## 关注我
 ![OpenCV or Android](./logo/wechat_qrcode.jpg)
 
