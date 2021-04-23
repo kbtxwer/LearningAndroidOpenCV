@@ -751,12 +751,14 @@ namespace cv {
                 void getMemoryConsumption(const std::vector<MatShape> &netInputShapes,
                                           CV_OUT std::vector<int> &layerIds,
                                           CV_OUT std::vector<size_t> &weights,
-                                          CV_OUTstd::vector<size_t> &blobs) const; // FIXIT: CV_WRAP
+                                          CV_OUT
+                                          std::vector<size_t> &blobs) const; // FIXIT: CV_WRAP
                 /** @overload */
                 void getMemoryConsumption(const MatShape &netInputShape,
                                           CV_OUT std::vector<int> &layerIds,
                                           CV_OUT std::vector<size_t> &weights,
-                                          CV_OUTstd::vector<size_t> &blobs) const; // FIXIT: CV_WRAP
+                                          CV_OUT
+                                          std::vector<size_t> &blobs) const; // FIXIT: CV_WRAP
 
                 /** @brief Enables or disables layer fusion in the network.
                  * @param fusion true to enable the fusion, false to disable. The fusion is enabled by default.
