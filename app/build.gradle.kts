@@ -14,6 +14,12 @@ android {
         targetSdkVersion(30)
         versionCode = 1
         versionName = "1.0"
+
+        externalNativeBuild {
+            cmake {
+                cppFlags("-std=c++11", "-frtti", "-fexceptions -lz")
+            }
+        }
     }
     buildTypes {
         named("release") {
@@ -22,6 +28,12 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path("src/main/cpp/CMakeLists.txt")
+            version = "3.10.2"
         }
     }
     buildFeatures {
@@ -34,7 +46,7 @@ android {
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.31")
+    implementation("org.jetbrains.kotlin:kotlin-stdlib:1.4.32")
     implementation("androidx.appcompat:appcompat:1.2.0")
     implementation("androidx.core:core-ktx:1.3.2")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")

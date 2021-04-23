@@ -11,6 +11,8 @@ import cn.onlyloveyd.demo.ui.*
 
 class MainActivity : ListActivity() {
 
+    external fun stringFromJNI(): String
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         listAdapter = SimpleAdapter(
@@ -18,6 +20,7 @@ class MainActivity : ListActivity() {
             R.layout.simple_list_item_1, arrayOf("title"),
             intArrayOf(R.id.text1)
         )
+        println("I am from JNI ${stringFromJNI()}")
     }
 
     private fun getData(): List<Map<String, Any>> {

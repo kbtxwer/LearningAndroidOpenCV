@@ -13,5 +13,6 @@ class App : Application() {
     }
     init {
         System.loadLibrary("opencv_java4")
+        System.loadLibrary("native-lib")
     }
 }
