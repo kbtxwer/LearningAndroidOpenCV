@@ -8,6 +8,7 @@ plugins {
 android {
     compileSdkVersion(30)
     buildToolsVersion("29.0.3")
+    ndkVersion = "20.0.5594570"
     defaultConfig {
         applicationId = "cn.onlyloveyd.demo"
         minSdkVersion(21)
