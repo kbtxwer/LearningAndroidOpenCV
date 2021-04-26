@@ -1,6 +1,5 @@
 package cn.onlyloveyd.demo
 
-import android.R
 import android.app.ListActivity
 import android.content.Intent
 import android.os.Bundle
@@ -8,19 +7,21 @@ import android.view.View
 import android.widget.ListView
 import android.widget.SimpleAdapter
 import cn.onlyloveyd.demo.ui.*
+import java.io.File
 
 class MainActivity : ListActivity() {
-
-    external fun stringFromJNI(): String
+    private var mDetectorPrototxtFile: File? = null
+    private var mDetectorCaffeModelFile: File? = null
+    private var mSuperResolutionPrototxtFile: File? = null
+    private var mSuperResolutionCaffeModelFile: File? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         listAdapter = SimpleAdapter(
             this, getData(),
-            R.layout.simple_list_item_1, arrayOf("title"),
-            intArrayOf(R.id.text1)
+            android.R.layout.simple_list_item_1, arrayOf("title"),
+            intArrayOf(android.R.id.text1)
         )
-        println("I am from JNI ${stringFromJNI()}")
     }
 
     private fun getData(): List<Map<String, Any>> {

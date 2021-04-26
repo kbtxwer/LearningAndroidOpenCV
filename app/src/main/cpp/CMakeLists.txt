@@ -39,6 +39,7 @@ aux_source_directory(wechat/zxing/common/reedsolomon WZCR)
 aux_source_directory(wechat/zxing/qrcode WZQ)
 aux_source_directory(wechat/zxing/qrcode/decoder WZQD)
 aux_source_directory(wechat/zxing/qrcode/detector WZQD2)
+
 # Creates and names a library, sets it as either STATIC
 # or SHARED, and provides the relative paths to its source code.
 # You can define multiple libraries, and CMake builds them for you.

@@ -68,4 +68,5 @@ dependencies {
     val navVersion = "2.3.4"
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
+    implementation("com.tencent:mmkv-static:1.2.7")
 }

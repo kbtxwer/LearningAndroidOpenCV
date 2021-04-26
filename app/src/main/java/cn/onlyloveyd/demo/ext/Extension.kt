@@ -6,6 +6,7 @@ import android.graphics.Bitmap
 import android.view.View
 import android.widget.ImageView
 import androidx.annotation.DrawableRes
+import androidx.annotation.RawRes
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -13,6 +14,7 @@ import kotlinx.coroutines.withContext
 import org.opencv.android.Utils
 import org.opencv.core.Mat
 import org.opencv.imgproc.Imgproc
+import java.io.File
 
 /**
  * 扩展方法
@@ -59,4 +61,13 @@ fun Activity.wrapCoroutine(before: () -> Unit, method: () -> Any, after: () -> U
         }
         after()
     }
+}
+
+fun Context.copyFromAssets(@RawRes resId: Int, targetDir:String, targetFileName:String): String {
+    val targetDirFile = getDir(targetDir, Context.MODE_PRIVATE)
+    val targetFile = File(targetDirFile, targetFileName)
+    targetFile.outputStream().use {
+        resources.openRawResource(resId).copyTo(it)
+    }
+    return targetFile.absolutePath
 }
