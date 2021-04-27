@@ -6,6 +6,8 @@
 |序号|文章链接|
 | ---- | ----- |
 |0|[Android OpenCV 摄像头实时预览](https://mp.weixin.qq.com/s/bvZylPUA6waDk0NbVSa2ow)|
+|1|全网首发微信二维码引擎Android平台移植](https://mp.weixin.qq.com/s/-VpaRvZGOuIlCboSBl1k-w)|
+|2|[微信二维码引擎Android平台移植（C++版）](https://mp.weixin.qq.com/s/yDMCe9hpLNHwCo9GcYFFWw)|
 
 ## 系列文章
 | 序号 | 文章链接                                                     |
