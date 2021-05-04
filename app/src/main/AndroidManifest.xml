@@ -260,7 +260,10 @@
             android:name=".ui.CameraPreviewActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
-
+        <activity
+            android:name=".ui.CameraXPreviewActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
     </application>
 
 </manifest>

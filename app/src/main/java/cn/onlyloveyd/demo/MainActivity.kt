@@ -395,6 +395,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(CameraPreviewActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "CameraX Preview",
+                "intent" to activityToIntent(CameraXPreviewActivity::class.java.name)
+            )
+        )
 
         return myData
     }

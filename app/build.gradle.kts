@@ -40,6 +40,10 @@ android {
     buildFeatures {
         dataBinding = true
     }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
     kotlinOptions {
         jvmTarget = "1.8"
     }
@@ -69,4 +73,11 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
     implementation("com.tencent:mmkv-static:1.2.7")
+
+    val cameraXVersion = "1.0.0-rc05"
+    implementation("androidx.camera:camera-core:${cameraXVersion}")
+    implementation("androidx.camera:camera-camera2:$cameraXVersion")
+    implementation("androidx.camera:camera-lifecycle:$cameraXVersion")
+    implementation("androidx.camera:camera-view:1.0.0-alpha20")
+    implementation("androidx.camera:camera-extensions:1.0.0-alpha24")
 }
