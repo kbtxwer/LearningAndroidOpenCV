@@ -58,6 +58,7 @@ class ORBBFMatchActivity : AppCompatActivity() {
     }
 
     private fun doORBBFMatch() {
+        val start = System.currentTimeMillis()
         val firstKeyPoints = MatOfKeyPoint()
         val secondKeyPoints = MatOfKeyPoint()
 
@@ -71,7 +72,7 @@ class ORBBFMatchActivity : AppCompatActivity() {
         val matcher = BFMatcher.create(Core.NORM_HAMMING)
         matcher.match(firstDescriptor, secondDescriptor, matches)
         Log.e(App.TAG, " matchers size = ${matches.size()}")
-
+        Log.e(App.TAG, " BF Waster Time = ${System.currentTimeMillis() - start}")
         val list = matches.toList()
         list.sortBy { it.distance }
         Log.e(App.TAG, "Min = ${list.first().distance}")

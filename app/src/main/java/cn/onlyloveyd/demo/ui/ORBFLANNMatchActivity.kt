@@ -22,7 +22,7 @@ import org.opencv.features2d.FlannBasedMatcher
 import org.opencv.features2d.ORB
 
 /**
- * ORB 特征点检测
+ * ORB FLANN 匹配
  * author: yidong
  * 2021-03-28
  */
@@ -57,6 +57,7 @@ class ORBFLANNMatchActivity : AppCompatActivity() {
     }
 
     private fun doORBFlannMatch() {
+        val start = System.currentTimeMillis()
         val firstKeyPoints = MatOfKeyPoint()
         val secondKeyPoints = MatOfKeyPoint()
 
@@ -72,8 +73,11 @@ class ORBFLANNMatchActivity : AppCompatActivity() {
 
         val matches = MatOfDMatch()
         val matcher = FlannBasedMatcher.create()
+//        val matcher = DescriptorMatcher.create(DescriptorMatcher.FLANNBASED)
+//        val matcher = DescriptorMatcher.create("FlannBased")
         matcher.match(firstDescriptor, secondDescriptor, matches)
         Log.e(App.TAG, " matchers size = ${matches.size()}")
+        Log.e(App.TAG, " Flann Waster Time = ${System.currentTimeMillis() - start}")
 
         val list = matches.toList()
         list.sortBy { it.distance }
@@ -91,6 +95,7 @@ class ORBFLANNMatchActivity : AppCompatActivity() {
         val matOfDMatch = MatOfDMatch()
         matOfDMatch.fromList(goodMatchers)
         drawMatches(firstGray, firstKeyPoints, secondGray, secondKeyPoints, matOfDMatch, result)
+
         GlobalScope.launch(Dispatchers.Main) {
             mBinding.ivResult.showMat(result)
         }

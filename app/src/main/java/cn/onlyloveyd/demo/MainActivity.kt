@@ -384,12 +384,7 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(ORBBFMatchActivity::class.java.name)
             )
         )
-        myData.add(
-            mapOf(
-                "title" to "ORB特征点暴力匹配",
-                "intent" to activityToIntent(ORBBFMatchActivity::class.java.name)
-            )
-        )
+
         myData.add(
             mapOf(
                 "title" to "ORB特征点FLANN匹配",
