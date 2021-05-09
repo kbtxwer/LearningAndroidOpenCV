@@ -7,13 +7,8 @@ import android.view.View
 import android.widget.ListView
 import android.widget.SimpleAdapter
 import cn.onlyloveyd.demo.ui.*
-import java.io.File
 
 class MainActivity : ListActivity() {
-    private var mDetectorPrototxtFile: File? = null
-    private var mDetectorCaffeModelFile: File? = null
-    private var mSuperResolutionPrototxtFile: File? = null
-    private var mSuperResolutionCaffeModelFile: File? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -391,6 +386,18 @@ class MainActivity : ListActivity() {
         )
         myData.add(
             mapOf(
+                "title" to "ORB特征点暴力匹配",
+                "intent" to activityToIntent(ORBBFMatchActivity::class.java.name)
+            )
+        )
+        myData.add(
+            mapOf(
+                "title" to "ORB特征点FLANN匹配",
+                "intent" to activityToIntent(ORBFLANNMatchActivity::class.java.name)
+            )
+        )
+        myData.add(
+            mapOf(
                 "title" to "OpenCV Camera Preview",
                 "intent" to activityToIntent(CameraPreviewActivity::class.java.name)
             )
@@ -401,6 +408,20 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(CameraXPreviewActivity::class.java.name)
             )
         )
+
+        myData.add(
+            mapOf(
+                "title" to "YUV",
+                "intent" to activityToIntent(YUVActivity::class.java.name)
+            )
+        )
+        myData.add(
+            mapOf(
+                "title" to "图像矫正",
+                "intent" to activityToIntent(ImageRectificationActivity::class.java.name)
+            )
+        )
+
 
         return myData
     }

@@ -257,6 +257,10 @@
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
+            android:name=".ui.ORBFLANNMatchActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
             android:name=".ui.CameraPreviewActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
@@ -264,6 +268,14 @@
             android:name=".ui.CameraXPreviewActivity"
             android:exported="false"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+
+        <activity
+            android:name=".ui.YUVActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.ImageRectificationActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
