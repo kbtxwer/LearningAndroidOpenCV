@@ -84,7 +84,7 @@ class AffineActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         title = item.title
         when (item.itemId) {
-            R.id.affine_rotate_scale -> rotateMatrix(120.0, 1.2)
+            R.id.affine_rotate_scale -> rotateMatrix(90.0, 1.0)
             R.id.affine_three_points -> threePointsMatrix()
         }
         return true

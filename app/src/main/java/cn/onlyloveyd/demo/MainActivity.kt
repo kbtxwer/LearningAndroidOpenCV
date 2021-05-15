@@ -412,8 +412,8 @@ class MainActivity : ListActivity() {
         )
         myData.add(
             mapOf(
-                "title" to "图像矫正",
-                "intent" to activityToIntent(ImageRectificationActivity::class.java.name)
+                "title" to "平面倾斜图像矫正",
+                "intent" to activityToIntent(RectifyActivity::class.java.name)
             )
         )
 

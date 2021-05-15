@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/positive_rotate_90"
+        android:title="顺时针90度" />
+    <item
+        android:id="@+id/negative_rotate_90"
+        android:title="逆时针90度" />
+</menu>
