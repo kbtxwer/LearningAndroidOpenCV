@@ -416,6 +416,12 @@ class MainActivity : ListActivity() {
                 "intent" to activityToIntent(RectifyActivity::class.java.name)
             )
         )
+        myData.add(
+            mapOf(
+                "title" to "Z轴倾斜图像矫正",
+                "intent" to activityToIntent(ZRectifyActivity::class.java.name)
+            )
+        )
 
 
         return myData

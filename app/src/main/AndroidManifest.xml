@@ -17,8 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:allowBackup"
-        tools:ignore="GoogleAppIndexingWarning,LockedOrientationActivity">
+        tools:ignore="GoogleAppIndexingWarning,LockedOrientationActivity"
+        tools:replace="android:allowBackup">
 
         <provider
             android:name="androidx.core.content.FileProvider"
@@ -276,6 +276,10 @@
 
         <activity
             android:name=".ui.RectifyActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".ui.ZRectifyActivity"
             android:exported="false" />
     </application>
 
