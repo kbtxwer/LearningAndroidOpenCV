@@ -423,6 +423,13 @@ class MainActivity : ListActivity() {
             )
         )
 
+        myData.add(
+            mapOf(
+                "title" to "智能图片裁剪",
+                "intent" to activityToIntent(SmartCropActivity::class.java.name)
+            )
+        )
+
 
         return myData
     }

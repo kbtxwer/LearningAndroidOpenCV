@@ -281,6 +281,10 @@
         <activity
             android:name=".ui.ZRectifyActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".ui.SmartCropActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

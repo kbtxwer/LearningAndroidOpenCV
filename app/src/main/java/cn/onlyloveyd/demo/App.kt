@@ -7,6 +7,7 @@ import com.tencent.mmkv.MMKV
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import me.pqpo.smartcropperlib.SmartCropper
 
 /**
  * 主程序
@@ -28,6 +29,7 @@ class App : Application() {
         val rootDir: String = MMKV.initialize(this)
         println("mmkv root: $rootDir")
         initWeChatModelFile()
+        SmartCropper.buildImageDetector(this)
     }
 
     /**

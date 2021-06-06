@@ -47,13 +47,18 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    // 不压缩模型
+    aaptOptions {
+        noCompress("tflite", "lite")
+    }
 }
 
 dependencies {
     implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
     implementation("org.jetbrains.kotlin:kotlin-stdlib:1.5.0")
-    implementation("androidx.appcompat:appcompat:1.2.0")
-    implementation("androidx.core:core-ktx:1.3.2")
+    implementation("androidx.appcompat:appcompat:1.3.0")
+    implementation("androidx.core:core-ktx:1.5.0")
     implementation("androidx.constraintlayout:constraintlayout:2.0.4")
 //    implementation(project(path = ":sdk450"))
     implementation(project(path = ":sdk452"))
@@ -84,4 +89,7 @@ dependencies {
     implementation("com.github.bumptech.glide:glide:4.12.0")
     annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
     implementation("com.github.HuanTanSheng:EasyPhotos:3.1.3")
+
+    // SmartCrop
+    implementation("com.github.pqpo:SmartCropper:v2.1.3")
 }
