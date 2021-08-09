@@ -285,6 +285,10 @@
         <activity
             android:name=".ui.SmartCropActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".ui.TestActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
