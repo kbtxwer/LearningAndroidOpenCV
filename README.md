@@ -9,6 +9,8 @@
 |1|[全网首发微信二维码引擎Android平台移植](https://mp.weixin.qq.com/s/-VpaRvZGOuIlCboSBl1k-w)|
 |2|[微信二维码引擎Android平台移植（C++版）](https://mp.weixin.qq.com/s/yDMCe9hpLNHwCo9GcYFFWw)|
 |3|[平面倾斜图像矫正](https://mp.weixin.qq.com/s/LVQ7unlMXOtN_YzBide16A)|
+|4|[Z 轴倾斜图像矫正](https://mp.weixin.qq.com/s/x_fLTY5tepdOi5R3ZYTKdg)|
+|5|[OpenCV 条码识别 Android 平台实践](https://mp.weixin.qq.com/s/Eb_RoFDI91yjUCHuBqDIsg)|
 
 ## 系列文章
 | 序号 | 文章链接                                                     |
@@ -71,6 +73,8 @@
 | 55   | [Android OpenCV（五十五）：ORB特征点检测](https://mp.weixin.qq.com/s/xRwB6hSpeZ-sZ5Fe7bVPtw)|
 | 56   | [Android OpenCV（五十六）：ORB特征点暴力匹配](https://mp.weixin.qq.com/s/Kh9JtmvpsW9yWomgFsncBw)|
 | 57   | [Android OpenCV（五十七）：ORB特征点FLANN匹配](https://mp.weixin.qq.com/s/3OXNriL859J_6VtasYx0PQ)|
+| 58   | [Android OpenCV（五十八）：SURF 特征点](https://mp.weixin.qq.com/s/qXA1EkC_kojvDogS4SlL1A)|
+
 ## 关注我
 ![OpenCV or Android](./logo/wechat_qrcode.jpg)
 
