@@ -1,3 +1,6 @@
+项目来源：https://github.com/onlyloveyd/LearningAndroidOpenCV
+
+
 ![OpenCV or Android](./logo/logo.png)
 # LearningAndroidOpenCV
 从零开始学习Android OpenCV
